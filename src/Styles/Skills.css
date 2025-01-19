@@ -1,0 +1,124 @@
+.skills-menu{
+    width: 31.2rem;
+    position: fixed;
+    display: flex;
+    align-items: flex-end;
+    top: 30%;
+    right: 15vw;
+    flex-direction: column;
+}
+.skill-item{
+    height: 3.7rem;
+    width: 45%;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.skill-title h2{
+    font-size: 1rem;
+    padding-right: 4.5rem;
+}
+.skill-item.activeSkills .skill-title h2{
+    font-size: 1.5rem;
+}
+.activeSkills{
+    border-radius: var(--radius-left);
+    cursor: default;
+}
+.skill-item.activeSkills:nth-child(1){
+    background: linear-gradient(270deg, #ffffff00, var(--cyan) 70%);
+}
+.skill-item.activeSkills:nth-child(2){
+    background: linear-gradient(270deg, #ffffff00, var(--purple) 70%);
+}
+.skill-icon{
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: 1.8rem;
+    left: 8rem;
+}
+
+.skill-sub-container-1 h3,
+.skill-sub-container-1 h3{
+    position: relative;
+    margin: 0;
+}
+
+.menu{
+    width: 19rem;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    right: 15vw;
+    transform: translateY(-25%);
+}
+
+
+.skill-sub-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    gap: 0rem;
+}
+.skill-item-container{
+    display: flex;
+    
+}
+.skillTitile{
+    width: 8rem;
+    padding-bottom: 1rem;
+    
+}
+
+.level-container{
+    display: flex;
+    gap: 0.3rem;
+} 
+
+
+.level-point{
+    width: 3rem;
+    height: 2rem;
+    border: 0.2rem;
+}
+.filled{
+    background: linear-gradient(180deg,#236473, #258fce, #7ce7ff);
+}
+.unfilled{
+    background: linear-gradient(180deg,#1c8298, #074654, #074654);
+}
+
+
+
+@media (max-width:700px) {
+    .menu{
+        width: 10rem;
+        top: 30%;
+        transform: translateY(-50%);
+    }
+    .skills-menu{
+        width: 25rem;
+    }
+    .skills-menu h2{
+        margin-left: 3rem;
+        font-size:0.6rem;
+
+    }
+    .skill-item.activeSkills .skill-title h2{
+        font-size: 0.725rem;
+    }
+    .skillTitile{
+        width: 5rem;
+    }
+    .level-point{
+        width: 2rem;
+        height: 1.5rem;
+        border: 0.2rem;
+    }
+}

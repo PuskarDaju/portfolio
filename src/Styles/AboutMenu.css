@@ -1,0 +1,130 @@
+.menu{
+    width: 19rem;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 60%;
+    transform: translateY(-60%);
+    left: 10vw;
+}
+.item{
+    
+    height:3.7rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 1rem;
+
+}
+.title{
+    font-size: 1rem;
+    padding-right: 2.5rem;
+}
+.item.active .title{
+    font-size: 1.5rem;
+}
+.sub-container{
+    width: 18.5rem;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    
+    top: 32%;
+    right: 10vw;
+    cursor: pointer;
+}
+.active-menuHeading{
+    cursor: default;
+}
+
+.item.active:nth-child(1) {
+    background: linear-gradient(90deg, var(--tranparent), var(--purple) 70%);
+    border-radius: var(--radius-right);
+}
+.item.active:nth-child(2) {
+    background: linear-gradient(90deg, var(--tranparent), var(--blue) 70%);
+    border-radius: var(--radius-right);
+}
+.item.active:nth-child(3) {
+    background: linear-gradient(90deg, var(--tranparent), var(--cyan) 70%);
+    border-radius: var(--radius-right);
+}
+.sub-container-PERSONAL.active-menuHeading h3,
+.sub-container-EDUCATION.active-menuHeading h3,
+.sub-container-CAREER.active-menuHeading h3
+{
+    border-radius: var(--radius-left);
+    height:2.5rem;
+    display: flex;
+    padding-left: 2rem;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    
+   
+
+}
+.sub-container-PERSONAL.active-menuHeading h3{
+    width: 13rem;
+    background: linear-gradient(90deg, var(--purple), var(--tranparent)150% );
+   
+
+}
+.sub-container-EDUCATION.active-menuHeading h3{
+    background: linear-gradient(90deg, var(--blue), var(--tranparent) 150%);
+    
+
+}
+.sub-container-CAREER.active-menuHeading h3{
+    background: linear-gradient(90deg, var(--cyan), var(--tranparent) 150%);
+ 
+
+}
+.item.active{
+    position: relative;
+    cursor: default;
+}
+.p-container{
+    display: none;
+}
+.active-menuHeading .p-container{
+    display: block;
+}
+.icon-title-container{
+    display: flex;
+    gap: 1.2rem;
+    margin-bottom: 0.5rem;
+    cursor: default;
+}
+.icon{
+    width: 3rem;
+    height: 3rem;
+
+}
+@media(max-width:700px){
+    .menu{
+        margin-top: -5%;
+        margin-left: 23%;
+        margin-bottom: 0;
+    }
+    .sub-container{
+        width: 15rem;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .title{
+        font-size: 0.8rem;
+        padding-right: 2.5rem;
+    }
+    .active-menuHeading .p-container{
+        font-size: 0.8rem;
+    }
+    h1,h2,h3,p{
+        font-size: 0.8rem;
+    }
+    .icon-title-container, icon{
+        display: none;
+    }
+}

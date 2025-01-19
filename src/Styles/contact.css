@@ -1,0 +1,92 @@
+.mainContact{
+    margin-left: 30%;
+    align-items: center;
+    margin-top: 18%;
+}
+.mainContact h1{
+    font-size: 6rem;
+}
+
+.iconContainer {
+    margin-top: 15%;
+    display: flex;
+    gap: 7rem;
+    flex-direction: row;
+    align-items: flex-start; /* Align icons and paragraphs to the top */
+}
+
+.iconWrapper {
+    display: flex;
+    flex-direction: column; /* Stack the icon and paragraph vertically */
+    align-items: center; /* Center align the icon and paragraph horizontally */
+    text-align: center; /* Center-align the text inside the paragraph */
+}
+
+.iconWrapper img {
+ 
+    width: 7rem;
+    height: 7rem;
+    object-fit: cover; /* Ensures the image fills the dimensions */
+}
+
+.iconWrapper a {
+    text-decoration: none;
+    margin-top: 0.5rem; /* Adjust spacing between icon and text */
+    font-size: 1.8rem; /* Set a comfortable font size for the paragraph */
+    color: white; /* Optional: Style the text */
+}
+
+@media(max-width:800px){
+    .mainContact h1{
+        font-size: 4rem;
+    }
+    .mainContact {
+        margin-top: 35%;
+       margin-left: 28%;
+        
+    }
+    .iconContainer {
+        gap: 3rem;
+    }
+    .iconWrapper a {
+      
+        margin-top: 0.5rem; 
+        font-size: 1rem; 
+    
+    }
+    .iconWrapper img {
+ 
+        width: 4rem;
+        height: 4rem;
+        object-fit: cover; 
+    }
+}
+@media(max-width:400px){
+    .mainContact h1{
+        
+        font-size: 3rem;
+        
+    }
+    .mainContact {
+        margin-top: 50%;
+       margin-left: 10%;
+        
+    }
+    .iconContainer {
+        gap: 3rem;
+    }
+    .iconWrapper a {
+      
+        margin-top: 0.5rem; 
+        font-size: 1rem; 
+    
+    }
+    .iconWrapper img {
+ 
+        width: 4rem;
+        height: 4rem;
+        object-fit: cover; 
+    }
+    
+}
+
